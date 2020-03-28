@@ -9,6 +9,8 @@
 
 // Your code:
 
+const sameSign = (nb1, nb2) => Math.sign(nb1) === Math.sign(nb2) ? true : false;
+
 //* Begin of tests
 const assert = require('assert');
 
