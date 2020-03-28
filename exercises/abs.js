@@ -11,7 +11,17 @@
 
 // Your code:
 
-function abs (numb) {
+// function abs (numb) {
+//     if (numb > 0) {
+//         return numb;
+//     } else if (numb < 0) {
+//         return -numb;
+//     } else {
+//         return 0;
+//     }
+// }
+
+const abs = numb => {
     if (numb > 0) {
         return numb;
     } else if (numb < 0) {
