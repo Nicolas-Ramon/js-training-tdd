@@ -8,6 +8,11 @@
 
 // Your code:
 
+const total = arr => (arr.length === 1) ? arr[0] : arr.pop() + total(arr);
+
+// const total = array.reduce((a, b) => a + b, 0);
+
+
 //* Begin of tests
 const assert = require('assert');
 
