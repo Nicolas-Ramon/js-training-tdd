@@ -9,6 +9,14 @@
 
 // Your code:
 
+function test(a, b) {
+    return a.repeat(b)
+}
+
+function repeat(a, b) {
+    return test(a, b)
+}
+
 //* Begin of tests
 const assert = require('assert');
 
