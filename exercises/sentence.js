@@ -8,6 +8,14 @@
 
 // Your code:
 
+function sentence (arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i])
+    }
+    return newArr.join(' ')
+}
+
 //* Begin of tests
 const assert = require('assert');
 
