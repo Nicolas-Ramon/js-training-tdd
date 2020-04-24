@@ -8,6 +8,10 @@
 
 // Your code:
 
+function words(a) {
+    return a.split(' ');
+}
+
 //* Begin of tests
 const assert = require('assert');
 
