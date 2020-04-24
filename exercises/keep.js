@@ -14,8 +14,30 @@
 
 // Your code:
 
+function keepFirst(a) {
+    return a.slice(0, 2);
+}
+
+function keepLast(b) {
+    return b.slice(-2, b.length);
+}
+
+function keepFirstLast(c) {
+    return c.slice(2, 4);
+}
+
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof keepFirst, 'function');
+assert.strictEqual(keepFirst.length, 1);
+assert.deepStrictEqual(keepFirst('abcdef'), ('ab'));
+assert.strictEqual(typeof keepLast, 'function');
+assert.strictEqual(keepLast.length, 1);
+assert.deepStrictEqual(keepLast('abcdef'), ('ef'));
+assert.strictEqual(typeof keepFirstLast, 'function');
+assert.strictEqual(keepFirstLast.length, 1);
+assert.deepStrictEqual(keepFirstLast('abcdefgh'), ('cd'));
+
+// assert.fail('You must write your own tests');
 // End of tests */

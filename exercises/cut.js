@@ -35,7 +35,7 @@ assert.strictEqual(cutLast.length, 1);
 assert.deepStrictEqual(cutLast('abcdef'), ('abcd'));
 assert.strictEqual(typeof cutFirstLast, 'function');
 assert.strictEqual(cutFirstLast.length, 1);
-assert.deepStrictEqual(cutFirstLast('abcdef'), ('cd'));
+assert.deepStrictEqual(cutFirstLast('abcdefgh'), ('cdef'));
 
 
 // assert.fail('You must write your own tests');
